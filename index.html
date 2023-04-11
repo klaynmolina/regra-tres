@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Molina">
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styleSmart.css" />
+        <link rel="stylesheet" href="styleTablet.css" />
+        <script src="scripts.js" defer></script>
+        <link rel="icon" href="/img/regra-tres.ico">
+        <meta name="author" content="Molina">
+        <title>Regra de Três</title>
+    </head>
+    <body>
+        <main>
+            <section class="container">
+                <h1 class="title" id="title">REGRA DE TRÊS</h1>
+                <div class="container-valor">
+                    <div class="container-valor-column">
+                        <label class="labels">Valor 1</label>
+                        <input id="valor1" type="text" onkeypress="return event.charCode>= 48 && event.charCode <= 57 || event.charCode == 44 || event.charCode == 46" required>
+                    </div><!-- /container-valor-column -->
+
+                    <img class="seta" src="img/seta.ico">
+
+                    <div class="container-valor-column">
+                        <label class="labels">Valor 2</label>
+                        <input id="valor2" type="text" onkeypress="return event.charCode>=48 && event.charCode <= 57 || event.charCode == 44 || event.charCode == 46" required>
+                    </div><!-- /container-valor-column -->      
+                </div><!-- /container-valor -->
+
+                <div class="container-valor">
+                    <div class="container-valor-column">
+                        <label class="labels">Valor 3</label>
+                        <input id="valor3" type="text" onkeypress="return event.charCode>=48 && event.charCode <= 57 || event.charCode == 44 || event.charCode == 46" required>
+                    </div><!-- /container-valor-column -->                    
+                    
+                    <img class="seta" src="img/seta.ico">
+
+                    <div class="container-valor-column">
+                        <label class="labels">Valor 4</label>
+                        <input id="valor4" readonly  value="?">
+                    </div><!-- /container-valor-column -->
+                </div><!-- /container-valor -->
+
+                <div class="container-calculo">
+                    <h2 id="resultado" class="resultado">Resultado</h2>
+                    <button id="calcular" class="btn">Calcular</button>
+                </div><!-- /container-calculo -->                
+            </section> <!-- /container -->
+                
+            <section class="container-explicacao">
+                <h3 class="title-explicacao" id="explicacao">Explicação:</h3>
+                <a href="https://brasilescola.uol.com.br/matematica/regra-tres-simples.htm">
+                <img class="clique-aqui" id="clique" src="img/clique-aqui.png"></a>
+
+                <button class="btn" id="mode">Colorfull</button>
+            </section><!-- /container-explicacao -->
+
+        </main>
+        <footer class="footer">
+            <a class="github" href="https://github.com/klaynmolina">@Developed by Molina</a>
+        </footer>
+    </body>
+</html>

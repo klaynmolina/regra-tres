@@ -25,7 +25,6 @@ document.addEventListener('keypress', function (e) {
 });
 
 
-
 // COLORFULL MODE
 
 const colorfullClass = 'colorfull';
@@ -41,6 +40,7 @@ const clique = document.getElementById('clique');
 const explicacao = document.getElementById('explicacao');
 const mode = document.getElementById('mode');
 const footer = document.getElementsByTagName('footer')[0];
+
 
 function changeMode() {
     changeClasses();
@@ -86,5 +86,7 @@ function changeImg() {
     seta1.setAttribute('src', 'img/seta.ico');
     seta2.setAttribute('src', 'img/seta.ico');
 }
+
+
 
 mode.addEventListener('click', changeMode);
